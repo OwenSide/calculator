@@ -121,3 +121,56 @@ button.error {
 button.error:hover {
     background: #f0e000;
 }
+
+/* Media Query dla mniejszych ekranów */
+@media (max-width: 600px) {
+    .calculator {
+        width: 95%;
+    }
+
+    .text {
+        font-size: 28px;
+    }
+
+    #display {
+        font-size: 1.1em;
+        height: 40px;
+    }
+
+    /* Zmniejsz rozmiar przycisków na mniejszych ekranach */
+    button {
+        font-size: 1em;
+        height: 40px;
+    }
+
+    /* Układ przycisków dla małych ekranów */
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+    }
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        width: 90%;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    #display {
+        font-size: 1em;
+        height: 35px;
+    }
+
+    button {
+        font-size: 0.9em;
+        height: 35px;
+    }
+
+    .buttons {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 4px;
+    }
+}
