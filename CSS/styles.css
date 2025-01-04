@@ -1,0 +1,123 @@
+/* Styl ogólny dla body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Kalkulator */
+.calculator {
+    width: 400px;
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Nagłówek */
+.text {
+    margin-bottom: 40px;
+    display: block;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+/* Wyświetlacz kalkulatora */
+#display {
+    width: 95%;
+    height: 45px;
+    margin-bottom: 10px;
+    text-align: right;
+    padding: 10px;
+    font-size: 1.3em;
+    border: none;
+    border-radius: 5px;
+    background: #111;
+    color: white;
+}
+
+/* Styl dla wyświetlacza w przypadku błędu */
+#display.error {
+    background: yellow;
+    color: black;
+}
+
+/* Styl dla negatywnego wyniku */
+#display.negative {
+    color: red;
+}
+
+/* Kontener przycisków */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+}
+
+/* Przyciski */
+button {
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+/* Styl przycisku po kliknięciu */
+button:active {
+    background: #666;
+}
+
+/* Styl przycisku po najechaniu */
+button:hover {
+    background: #555;
+    transform: scale(1.1);
+}
+
+/* Styl dla przycisków operacyjnych */
+button.operator {
+    background: #555;
+}
+
+/* Styl dla operatorów po najechaniu */
+button.operator:hover {
+    background: #666;
+}
+
+/* Styl dla przycisku "=" */
+button.equals {
+    background: #777;
+}
+
+/* Styl dla "=" po najechaniu */
+button.equals:hover {
+    background: #888;
+}
+
+/* Styl dla przycisku CE */
+button.clear {
+    background: #a33;
+}
+
+/* Styl dla CE po najechaniu */
+button.clear:hover {
+    background: #b44;
+}
+
+/* Styl dla przycisku błędu */
+button.error {
+    background: yellow;
+    color: black;
+}
+
+/* Styl dla przycisku błędu po najechaniu */
+button.error:hover {
+    background: #f0e000;
+}

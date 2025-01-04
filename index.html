@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <!-- Łączenie z plikiem CSS -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Tytuł kalkulatora -->
+    <div class="text">Kalkulator</div>
+    <div class="calculator">
+        <!-- Pole wyświetlania -->
+        <input type="text" id="display" readonly>
+
+        <!-- Przyciski kalkulatora -->
+        <div class="buttons">
+
+            <!-- Pierwszy wiersz (funkcje) -->
+            <button>(</button>
+            <button>)</button>
+            <button>%</button>
+            <div>
+                <!-- Przycisk cofania i przycisk 'CE' -->
+                <button style="width: 47%;">←</button>
+                <button style="width: 47%;" class="clear">CE</button>
+            </div>
+
+            <!-- Drugi wiersz (funkcje) -->
+            <button class="function" data-func="Inv">Inv</button>
+            <button class="function" data-func="sin">sin</button>
+            <button class="function" data-func="ln">ln</button>
+            <button class="function" data-func="π">π</button>
+
+            <!-- Trzeci wiersz (funkcje) -->
+            <button class="function" data-func="cos">cos</button>
+            <button class="function" data-func="log">log</button>
+            <button class="function" data-func="e">e</button>
+            <button class="function" data-func="tan">tan</button>
+
+            <!-- Czwarty wiersz (operacje) -->
+            <button class="function" data-func="√">√</button>
+            <button class="function" data-func="EXP">EXP</button>
+            <button class="function" data-func="x²">x²</button>
+            <button class="function" data-func="x^">x^</button>
+            
+            <!-- Piąty wiersz (liczby) -->
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">÷</button>
+            
+            <!-- Szósty wiersz (liczby) -->
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">×</button>
+            
+            <!-- Siódmy wiersz (liczby) -->
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="operator">-</button>
+            
+            <!-- Ósmy wiersz (liczby) -->
+            <button class="number">.</button>
+            <button class="number">0</button>
+            <button class="equals">=</button>
+            <button class="operator">+</button>
+        </div>
+    </div>
+    <!-- Łączenie z plikiem JavaScript -->
+    <script src="JS/script.js"></script>
+</body>
+</html>
